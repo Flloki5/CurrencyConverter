@@ -1,4 +1,4 @@
-INSERT INTO currency (id, amount, name, shortcut_name)
-VALUES  (1, 4, 'Dolar', 'USD'),
-        (2, 4, 'Zloty', 'PLN'),
-        (3, 6, 'Bitcoin', 'B');
+INSERT INTO currency (id, currency, code, mid)
+VALUES  (1, 'Dolar', 'USD', 4),
+        (2, 'Zloty', 'PLN', 4),
+        (3, 'Bitcoin', 'B', 6);

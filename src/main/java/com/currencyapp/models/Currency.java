@@ -9,14 +9,14 @@ public class Currency {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
-    private String shortcutName;
-    private int amount;
+    private String currency;
+    private String code;
+    private int mid;
 
-    public Currency(String name, String shortcutName, int amount) {
-        this.name = name;
-        this.shortcutName = shortcutName;
-        this.amount = amount;
+    public Currency(String currency, String code, int mid) {
+        this.currency = currency;
+        this.code = code;
+        this.mid = mid;
     }
 
     public Currency() {
@@ -30,27 +30,27 @@ public class Currency {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getCurrency() {
+        return currency;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCurrency(String name) {
+        this.currency = name;
     }
 
-    public String getShortcutName() {
-        return shortcutName;
+    public String getCode() {
+        return code;
     }
 
-    public void setShortcutName(String shortcutName) {
-        this.shortcutName = shortcutName;
+    public void setCode(String shortcutName) {
+        this.code = shortcutName;
     }
 
-    public int getAmount() {
-        return amount;
+    public int getMid() {
+        return mid;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    public void setMid(int amount) {
+        this.mid = amount;
     }
 }
